@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/xixihaha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="hsy.com.carousel.CarouselView.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="180dip" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/tiledstripes">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dip">
+
+                    <TextView
+                        android:id="@+id/tv_regId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <TextView
+                        android:id="@+id/tv_appkey"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <TextView
+                        android:id="@+id/tv_package"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <TextView
+                        android:id="@+id/tv_imei"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <TextView
+                        android:id="@+id/tv_device_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip" />
+
+                    <Button
+                        android:id="@+id/init"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:text="initPush" />
+
+                    <Button
+                        android:id="@+id/stopPush"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:text="stopPush" />
+
+                    <Button
+                        android:id="@+id/resumePush"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:text="resumePush" />
+
+                    <Button
+                        android:id="@+id/getRegistrationId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:text="get_Registration_Id" />
+
+                    <EditText
+                        android:id="@+id/msg_rec"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="日历"
+                        android:onClick="Calendar"/>
+
+                    <Button
+                        android:id="@+id/listview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="ListView"
+                        android:onClick="ListView"/>
+
+                    <Button
+                        android:id="@+id/listview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="ListViewTwo"
+                        android:onClick="ListView"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Ba"
+                        android:onClick="Ba"/>
+
+                    <Button
+                        android:id="@+id/setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="高级功能" />
+
+                    <Button
+                        android:id="@+id/msn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="MSN"
+                        android:onClick="MSN"/>
+
+                    <Button
+                        android:id="@+id/suiji"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="50dp"
+                        android:text="随机"
+                        android:onClick="MSN"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.fivehundredpx.android.blur.BlurringView
+        android:id="@+id/blurring_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:blurRadius="11"
+        app:downsampleFactor="6"
+        android:layout_marginTop="120dp"
+        app:overlayColor="#99FFFFFF"/>
+
+
+    <include layout="@layout/activity_ba"></include>
+
+</RelativeLayout>

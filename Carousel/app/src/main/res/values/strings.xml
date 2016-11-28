@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">轮播图</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="loading">正在加载</string>
+    <string name="release_to_load">释放加载</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pullup_to_load">上拉加载</string>
+    <string name="release_to_refresh">释放刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="title_activity_ba_">Ba_Activity</string>
+
+    <string name="pdl_pull">下拉刷新</string>
+    <string name="pdl_down">上拉加载</string>
+    <string name="release_to_pull">松开刷新</string>
+    <string name="release_to_down">松开加载</string>
+    <string name="continue_to_pull">继续向下拉</string>
+    <string name="continue_to_down">继续向上拉</string>
+
+</resources>
